@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+    <View
+        android:id="@+id/vwDashboard"
+        android:layout_width="431dp"
+        android:layout_height="739dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/signinpage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/lnDashboard"
+        android:layout_width="364dp"
+        android:layout_height="590dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/framesignin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808">
+
+        <TextView
+            android:id="@+id/txtVwGroups"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="monospace"
+            android:text="Groups"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/listview_chats"
+            android:layout_width="match_parent"
+            android:layout_height="508dp" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnAddGroup"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:background="@drawable/addbutton"
+        android:src="@drawable/add"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <!--        app:layout_constraintVertical_bias="0.023" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
